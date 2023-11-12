@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--Indica el tipo de documento-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Indica a el navegador el tipo de codificación que se debe utilizar-->
+    <!--Sivre para que el ancho de la pantalla sea el ancho del contenido-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En este sitio web encontraras las mejores ofertas"
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/premio-de-futbol.png"
+    />
+    <title>Mi primer HTML</title>
+    <link rel="stylesheet" href="styles.css" /><!--Se enlazo el CSS Externo-->
+    <style>
+      p {
+        color: rgb(105, 62, 6);
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>SOBRE MÍ: DANIEL IÑIGUEZ</h1>
+    <!--Tenemos del h1 al h6 para encabezados-->
+
+    <img id="personalPhoto"
+      src="./assets/img/yo.jpg"
+      alt="Imagen de Daniel, mirando a la camara con un fondo de edificios y arboles"
+    />
+
+    <p style="color: blueviolet; text-align: center">
+      <!--p es para poner un texto de bloque o un parrafo-->
+      Hola, tengo 24 años, soy originario de CDMX, pero vivo en Toluca
+      actualmente. Tengo 2 hermanos: Laura y Alan; y 1 perrita: Perdy. Estudié
+      <strong>Mecatronica</strong> en UVM campus Toluca.
+    </p>
+    <!--La etiqueta strong sirve para hacer negritas el texto que este dentro-->
+
+    <!--Tenemos 3 tipos de listas: ordenadas, desordenadas y de descripción-->
+
+    <h2>Tipos de listas</h2>
+    <!--Lista Ordenada:-->
+    <p>Mi top 5 de canciones favoritas del momento son:</p>
+    <ol>
+      <li>Dakiti - Bad Bunnt.</li>
+      <li>Qlona - KarolG y PP.</li>
+      <li>Set fire to the rain - Adele.</li>
+      <li>Si no estas - Iñigo Quintero.</li>
+      <li>Entre Nosotros - Tiago PZK y LIT Killah.</li>
+    </ol>
+
+    <!--Lista Desordenada:-->
+    <p>Mis 5 cosas favoritas:</p>
+    <ul>
+      <li>Jugar futbol.</li>
+      <li>Escuchar musica.</li>
+      <li>Enchiladas y Chilaquiles verdes.</li>
+      <li>Ver series.</li>
+      <ul>
+        <li>Series de accion</li>
+        <li>Series de suspenso</li>
+        <ol>
+          <li>The 100</li>
+          <li>Dark</li>
+        </ol>
+      </ul>
+      <li><i>Programar.</i></li>
+      <!-- usamos "<i></i>" de Italica para hacer cursiva el texto-->
+    </ul>
+
+    <h3>Datos random</h3>
+
+    <p>Te dejo una foto de un gatito:</p>
+    <img
+      src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+      alt="Gatito naranja volteando a ver a la cámara. Tiene largos bigotes y orejas puntiagudas. Es muy adorable."
+    />
+
+    <!--Lista descriptiva-->
+    <p>Mi rutina de skin care es la siguente:</p>
+    <d1>
+      <dt>Rutina de noche:</dt>
+      <!--Elemento a describir-->
+      <dd>
+        Primero te mojas el rostro con agua tibia, despues con la cara humeda
+        aplicas el jabon en el rostro y frotas suavemente, despues vuelves a
+        mojar el rostro para limpiar y te secas con una toalla, despues de que
+        ya este seca la cara, aplicas la crema retinol, posteriormente aplicas,
+        crema para resecar los granos activos, y finalmente aplicas un
+        hidratante.
+      </dd>
+      <br />
+      <!--Sirve para salto de linea-->
+      <dt>Rutina de Dia:</dt>
+      <dd>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet eum
+        voluptatum cum voluptatibus quam est quas voluptate odit nobis ab sed
+        ducimus, dolore, culpa aperiam veniam ipsa nemo vero voluptas!
+      </dd>
+      <!--Descripción-->
+    </d1>
+
+    <!--Elementos de linea y bloque-->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum omnis dolor,
+      provident autem totam quos eveniet accusamus culpa tenetur sint!
+      Voluptatum neque ea eius illum veniam voluptates magnam eos amet?
+    </p>
+    <span>Hola, soy un elemento en linea</span> <span>Holax2</span>
+    <br><br>
+
+    <!--Tablas-->
+    <h2 class="tituloTabla">Promociones!</h2>
+    <table id="tabla">
+      <caption>1.Tabla de promociones en el cine.</caption>
+      <thead> <!--Encabezado de a tabla-->
+        <tr>
+          <th colspan="5">Promociones de la semana</th>
+          <th colspan="2">Promociones del fin de semana</th>
+        </tr>
+        <tr> <!--Table row-fila-->
+          <th class="Jugadores">Lunes</th> <!--Celdas de encabezado-->
+          <th scope="col">Martes</th>
+          <th scope="col">Miercoles</th>
+          <th scope="col">Jueves</th>
+          <th scope="col">Viernes</th>
+          <th scope="col">Sabado</th>
+          <th scope="col">Domingo</th>
+        </tr>
+      </thead>
+      <tbody> <!--Cuerpo de la Tabla-->
+        <tr>
+          <td scope="row">Combo Lunes</td>
+          <td>Martes 2x1 en salas Tradicionales</td>
+          <td>VIP a precio normal</td>
+          <td>Bebida gratis en la compra de Palomitas</td>
+          <td>Palomitas 2x1</td>
+          <td>Dulceria a 40 pesos</td>
+          <td>40% de descuento en 4DX</td>
+        </tr>
+        <tr>
+          <td scope="row">$150 MXN</td>
+          <td>45$ MXN</td>
+          <td>$95 MXN</td>
+          <td colspan="2">85$ MXN</td>
+          <td>$40 MXN</td>
+          <td>$120 MXN</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
